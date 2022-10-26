@@ -1,9 +1,9 @@
-// JavaScript source code
+//bloons tower defense basically
 class Balloon {
     constructor() {
         this.x = random(width)
         this.y = random(height)
-        this.r = 15
+        this.r = 25
         this.vx = 0
         this.vy = 0
 
@@ -15,22 +15,19 @@ class Balloon {
         if (!this.popped) {
             //calculate the blow away force    
             let d = dist(this.x, this.y, mouseX, mouseY)
-            let force = d < height / 2 ? -10 / (d * d) : 0
+            let force = d < height / 2 ? - 10 / (d * d) : 0
             //apply the force to the existing velocity    
             this.vx += force * (mouseX - this.x)
             this.vy += force * (mouseY - this.y)
-            //also add some friction to take energy out of the system    
-            
         }
 
+        //also add some friction to take energy out of the system    
         this.vx *= 0.95
         this.vy *= 0.95
-        //update the position    
+        //update the position   
         this.x += this.vx
         this.y += this.vy
-
     }
-
     checkBounds() {
         //make balloon wrap to the other side of the canvas    
         if (this.x < 0) this.x = width
@@ -38,10 +35,8 @@ class Balloon {
         if (this.y < 0) this.y = height
         if (this.y > height) this.y = 0
     }
-
     checkToPop() {
-        if (!this.popped && dist(this.x, this.y, mouseX, mouseY) < this.r)
-        {
+        if (!this.popped && dist(this.x, this.y, mouseX, mouseY) < this.r) {
             this.popped = true
             let currScore = Number(document.getElementById("score").innerHTML)
             currScore++
@@ -54,34 +49,35 @@ class Balloon {
 }
 
 let balloons = []
-const num_of_balloons = 25
+const NUM_OF_BALLOONS = 25
 let popSfx
+
 
 function preload() {
     soundFormats('wav')
-    popSfx = loadSound("./pop")
+    popSfx = loadSound("pop")
 }
+
+
 
 function setup() {
     let canvas = createCanvas(640, 480)
     canvas.parent("gameContainer")
 
-    for (let i = 0; i < num_of_balloons; i++) {
-        balloons[i] = new Balloon()
+    for (let i = 0; i < NUM_OF_BALLOONS; i++) {
+        balloons[i] = new Balloon();
     }
-}
 
+}
 function draw() {
-    //a nice sky blue background    
+    //a nice sky blue background    
     background(135, 206, 235)
 
-    for (let i = 0; i < num_of_balloons; i++) {
+    for (let i = 0; i < NUM_OF_BALLOONS; i++) {
         fill(balloons[i].col)
         circle(balloons[i].x, balloons[i].y, balloons[i].r)
-        balloons[i].blowAway
-        balloons[i].checkBounds
-        balloons[i].checkToPop
-
+        balloons[i].blowAway();
+        balloons[i].checkBounds();
+        balloons[i].checkToPop();
     }
 }
-
