@@ -1,0 +1,108 @@
+﻿a {
+    color: black;
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+#main-title{
+    font-size: 3rem;
+}
+
+.demo-class{
+    background-color:aquamarine;
+}
+
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    box-sizing:border-box; /* this is a comment in css*/
+}
+
+body{
+    background-color: lightslategray;
+    color: black;
+}
+
+h3{
+    color:red;
+}
+
+h2{
+    color:blue;
+}
+
+.section-1{
+    background-color:green;
+    border: 5px lightgreen dashed ;
+}
+
+.section-2 {
+    background-color: rgba(0,0,0,0.4);
+}
+
+.container{
+    width: 75%;
+    margin: auto;
+}
+
+.section-1 li {
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    /*text-decoration: underline;*/
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+    list-style: none;
+}
+
+#myform {
+    background-color: grey;
+    color: blanchedalmond;
+    padding: 50px;
+    margin: 10px;
+}
+
+#myform input[type = "text"] {
+        padding: 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%
+}
+
+input[type = "submit"] {
+        padding: 8px;
+        background-color: white;
+
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    justify-content:space-around;
+}
+
+.flex-container li {
+        list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+    /*states - psuedoclass*/
+a:hover{
+    text-decoration: underline;
+}
+
+a:active{
+    color: white;
+}
+
+img{
+    border-radius: 100%;
+}

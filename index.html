@@ -5,17 +5,19 @@
     <meta charset="utf-8" />
     <meta name="auhtor" content="Nathan Bird"/>    
     <title>My Pokedex</title>
+    <link href="ProfileStyle.css" rel="stylesheet" />
 </head>
 <body>
+    <div class= "container">
     <nav>
-        <ul>
-            <li><a href="index.html">Pokedex</a></li>
+        <ul class="flex-container">
+            <li><a href="index.html" id="home">Pokedex</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="https://www.linkedin.com/in/nathan-bird-aa967a244/">LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/nathan-bird-aa967a244/" target="_blank">LinkedIn</a></li>
         </ul>
     </nav>
     <header>
-        <h1><strong>Nathans</strong> <em>Pokemon Collection</em></h1>
+        <h1 id="main-title"><strong>Nathans</strong> <em>Pokemon Collection</em></h1>
         <img src="pokedex-switch.jpeg" alt="My podedex" />
         <hr />
     </header>
@@ -24,7 +26,7 @@
             <h2>My Pokemon</h2>
         </article>
 
-        <article>
+        <article class="section-1 ">
             <p> Currently my team consists of: </p>
             <ul>
                 <li>Charizard</li>
@@ -40,13 +42,13 @@
 
         <h3>Pokemon Website</h3>
         <form 
-              action="https://www.pokemon.com/uk/pokedex/" method="get" target="_blank">
+              action="https://www.pokemon.com/uk/pokedex/" method="get" target="_blank" id="myform">
             <label for="mysearch"> Search for:</label>
             <input id ="mysearch" name="q" value="squirtle" />
             <input type="submit" value="Official Pokedex" />
         </form>
     </section>
-
+    </div>
     <footer>
         <small> Copyright &#169; Website made by Nathan Bird during Week 7 at <cite>Sparta Global</cite></small>
     </footer>
