@@ -7,21 +7,48 @@
     <title>My Pokedex</title>
 </head>
 <body>
-    <div>
-        <h1><strong>Nathans</strong> <em>Pokemon Collection</em></h1>
-    </div>
-    
-    <div>
-        <h2>My Pokemon</h2>
-    </div>
-    
-    <div>
-        <p> Currently my team consists of: </p>
+    <nav>
         <ul>
-            <li>Charizard</li>
-            <li>Pikachu</li> 
-            <li>Staravia</li> 
+            <li><a href="index.html">Pokedex</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="https://www.linkedin.com/in/nathan-bird-aa967a244/">LinkedIn</a></li>
         </ul>
-    </div>
+    </nav>
+    <header>
+        <h1><strong>Nathans</strong> <em>Pokemon Collection</em></h1>
+        <img src="pokedex-switch.jpeg" alt="My podedex" />
+        <hr />
+    </header>
+    <section>
+        <article>
+            <h2>My Pokemon</h2>
+        </article>
+
+        <article>
+            <p> Currently my team consists of: </p>
+            <ul>
+                <li>Charizard</li>
+                <li>Pikachu</li>
+                <li>Staravia</li>
+            </ul>
+            <p> My Dream future team will consist of: </p>
+            <ul>
+                <li>Giratina</li>
+                <li>Milotic</li>
+            </ul>
+        </article>
+
+        <h3>Pokemon Website</h3>
+        <form 
+              action="https://www.pokemon.com/uk/pokedex/" method="get" target="_blank">
+            <label for="mysearch"> Search for:</label>
+            <input id ="mysearch" name="q" value="squirtle" />
+            <input type="submit" value="Official Pokedex" />
+        </form>
+    </section>
+
+    <footer>
+        <small> Copyright &#169; Website made by Nathan Bird during Week 7 at <cite>Sparta Global</cite></small>
+    </footer>
 </body>
 </html>
