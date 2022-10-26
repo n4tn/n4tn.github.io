@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="auhtor" content="Nathan Bird" />
+    <title>Game</title>
+    <link href="ProfileStyle.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js" defer></script>
+    <script scr="main.js" defer></script>
+    <script scr="game.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js" defer></script>
+
+</head>
+<body>
+    <nav>
+        <ul class="flex-container">
+            <li><a href="index.html" id="home">Pokedex</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="Game.html">Game</a></li>
+            <li><a href="https://www.linkedin.com/in/nathan-bird-aa967a244/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <div id="title-container">
+        <h1 id="greeting" onmouseover="changeText()">Hello there!</h1>
+    </div>
+    <button onclick="greeting()">
+        Say hello!
+    </button>
+
+    <hr />
+
+    <section id="gameContainer">
+        <h2>Pop the Balloons!</h2>
+        <p>Score: <span id="score">0</span></p>
+    </section>
+</body>
+</html>
