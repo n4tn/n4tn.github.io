@@ -5,15 +5,18 @@
 
 p {
     font-size: 1.2rem;
+
 }
 
-#main-title{
+#main-title {
     font-size: 3rem;
+    text-align: center ;
+   outline-color: yellow;
+    outline-style: groove;
+    color: blue;
 }
 
-.demo-class{
-    background-color:aquamarine;
-}
+
 
 *{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -22,21 +25,27 @@ p {
 }
 
 body{
-    background-color: lightslategray;
-    color: black;
+    background-color: white;
+    color: blue;
 }
 
 h3{
     color:red;
+    font-family: 'Comic Sans MS';
+    font
 }
 
-h2{
-    color:blue;
+h2 {
+    color: blue;
+    outline-color: yellow;
+    outline-style: groove;
 }
 
-.section-1{
-    background-color:green;
-    border: 5px lightgreen dashed ;
+.section-1 {
+    /*    background-color: green;*/
+    border-radius: 5px;
+    color: black ;
+    /*    border: 5px lightgreen dashed ;*/
 }
 
 .section-2 {
@@ -48,27 +57,27 @@ h2{
     margin: auto;
 }
 
-.section-1 li {
-    font-family: Tahoma;
-    font-weight: 800;
-    font-style: italic;
+/*.section-1 li {
+    font-family: Tahoma;*/
+/*    font-weight: 800;*/
+    /*font-style: italic;*/
     /*text-decoration: underline;*/
-    text-transform: lowercase;
+    /*text-transform: lowercase;
     letter-spacing: 0.1em;
     list-style: none;
-}
+}*/
 
 #myform {
     background-color: grey;
-    color: blanchedalmond;
-    padding: 50px;
+    color: white;
+    padding: 5px;
     margin: 10px;
 }
 
 #myform input[type = "text"] {
         padding: 8px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
         width: 100%
 }
 
@@ -100,9 +109,14 @@ a:hover{
 }
 
 a:active{
-    color: white;
+    color: blue;
 }
 
-img{
-    border-radius: 100%;
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /*    border-radius: 100%;*/
 }
+

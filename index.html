@@ -3,55 +3,64 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <meta name="auhtor" content="Nathan Bird"/>    
+    <meta name="auhtor" content="Nathan Bird" />
     <title>My Pokedex</title>
     <link href="ProfileStyle.css" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
-    <div class= "container">
-    <nav>
-        <ul class="flex-container">
-            <li><a href="index.html" id="home">Pokedex</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="Game.html">Game</a></li>
-            <li><a href="https://www.linkedin.com/in/nathan-bird-aa967a244/" target="_blank">LinkedIn</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1 id="main-title"><strong>Nathans</strong> <em>Pokemon Collection</em></h1>
-        <img src="pokedex-switch.jpeg" alt="My podedex" />
-        <hr />
-    </header>
-    <section>
-        <article>
-            <h2>My Pokemon</h2>
-        </article>
-
-        <article class="section-1 ">
-            <p> Currently my team consists of: </p>
-            <ul>
-                <li>Charizard</li>
-                <li>Pikachu</li>
-                <li>Staravia</li>
+    <div class="container">
+        <nav>
+            <ul class="flex-container">
+                <li><a href="index.html" id="home">Pokedex</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="Game.html">Game</a></li>
+                <li><a href="https://www.linkedin.com/in/nathan-bird-aa967a244/" target="_blank">LinkedIn</a></li>
             </ul>
-            <p> My Dream future team will consist of: </p>
-            <ul>
-                <li>Giratina</li>
-                <li>Milotic</li>
-            </ul>
-        </article>
+        </nav>
+        <header>
+            <h1 id="main-title"><strong>Nathans</strong> <em>Pokemon Collection</em></h1>
+            <img src="pokedex-kanto-1.jpg" alt="My podedex" />
+            <hr />
+        </header>
+        <section>
+            <article>
+                <h2>My Pokemon</h2>
+            </article>
 
-        <h3>Pokemon Website</h3>
-        <form 
-              action="https://www.pokemon.com/uk/pokedex/" method="get" target="_blank" id="myform">
-            <label for="mysearch"> Search for:</label>
-            <input id ="mysearch" name="q" value="squirtle" />
-            <input type="submit" value="Official Pokedex" />
-        </form>
-    </section>
+            <article class="section-1 ">
+                <p> Currently my team consists of: </p>
+                <img src="charizard.png" class="rounded float-start" alt="Charizard">
+                <img src="pikachu.png" class="rounded float-end" alt="Pikachu">
+                <img src="arceus.png" class="rounded float-start" alt="Arceus">
+                <img src="glaceon.png" class="rounded float-end" alt="Glaceon">
+                <img src="garchomp.jpg" class="rounded float-start" alt="Garchomp">
+                <img src="staravia.png" class="rounded float-end" alt="Staravia">
+
+                <!--<p> My Dream future team will consist of: </p>
+                <ul>
+                    <li>Milotic</li>
+                    <li>Milotic</li>
+                    <li>Milotic</li>
+                    <li>Milotic</li>
+                    <li>Milotic</li>
+                    <li>Milotic</li>
+                </ul>-->
+            </article>
+
+            <h3>Pokemon Website</h3>
+            <form action="https://www.pokemon.com/uk/pokedex/" method="get" target="_blank" id="myform">
+                <label for="mysearch"> Search for:</label>
+                <input id="mysearch" name="q" value="in works..." />
+                <input type="submit" value="Official Pokedex" />
+            </form>
+        </section>
     </div>
     <footer>
         <small> Copyright &#169; Website made by Nathan Bird during Week 7 at <cite>Sparta Global</cite></small>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

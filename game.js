@@ -43,35 +43,46 @@ class Balloon {
             document.getElementById("score").innerHTML = currScore
             this.col = color(156)
 
-            popSfx.play()
+            //popSfx.play()
         }
     }
 }
-
+let button
 let balloons = []
 const NUM_OF_BALLOONS = 25
-let popSfx
+//let popSfx
 
 
-function preload() {
-    soundFormats('wav')
-    popSfx = loadSound("pop")
-}
+//function preload() {
+//    soundFormats('wav')
+//    popSfx = loadSound("pop")
+//}
 
 
 
 function setup() {
     let canvas = createCanvas(640, 480)
     canvas.parent("gameContainer")
+    button = createButton('reset')
 
     for (let i = 0; i < NUM_OF_BALLOONS; i++) {
         balloons[i] = new Balloon();
     }
+    button.mousePressed(resetSketch)
 
+}
+
+function resetSketch() {
+    let canvas = createCanvas(640, 480)
+    canvas.parent("gameContainer")
+
+    for (let i = 0; i < NUM_OF_BALLOONS; i++) {
+        balloons[i] = new Balloon();
+    }
 }
 function draw() {
     //a nice sky blue background    
-    background(135, 206, 235)
+    background(180, 200, 235)
 
     for (let i = 0; i < NUM_OF_BALLOONS; i++) {
         fill(balloons[i].col)
