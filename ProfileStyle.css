@@ -11,7 +11,7 @@ p {
 #main-title {
     font-size: 3rem;
     text-align: center ;
-   outline-color: yellow;
+/*   outline-color: yellow;*/
     outline-style: groove;
     color: blue;
 }
@@ -32,13 +32,13 @@ body{
 h3{
     color:red;
     font-family: 'Comic Sans MS';
-    font
+    
 }
 
 h2 {
-    color: blue;
-    outline-color: yellow;
-    outline-style: groove;
+    color: yellow;
+/*    outline-color: yellow;*/
+/*    outline-style: groove;*/
 }
 
 .section-1 {
@@ -90,7 +90,7 @@ input[type = "submit"] {
 .flex-container{
     display: flex;
     flex-direction: row;
-    width: 70vw;
+    width: 100vw;
     justify-content:space-around;
 }
 
@@ -120,3 +120,23 @@ img {
     /*    border-radius: 100%;*/
 }
 
+#pokemon-overview {
+    background-color: red;
+    color: black;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 5px blue solid;
+}
+
+#profile-section{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#my-face {
+    margin-top: 10px;
+/*    border-radius: 100%;*/
+}

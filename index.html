@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="auhtor" content="Nathan Bird" />
-    <title>My Pokedex</title>
+    <title>Pokemon</title>
     <link href="ProfileStyle.css" rel="stylesheet" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +14,7 @@
     <div class="container">
         <nav>
             <ul class="flex-container">
+                <li><a href="Home.html">Profile</a></li>
                 <li><a href="index.html" id="home">Pokedex</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="Game.html">Game</a></li>
@@ -21,17 +22,38 @@
             </ul>
         </nav>
         <header>
-            <h1 id="main-title"><strong>Nathans</strong> <em>Pokemon Collection</em></h1>
+            <!--<h1 id="main-title"><strong><em>Pokémon Collection</em></strong></h1>-->
             <img src="pokedex-kanto-1.jpg" alt="My podedex" />
             <hr />
         </header>
+        <section id="pokemon-overview">
+            <h2>A brief overview of Pokémon</h2>
+            <figure>
+                <blockquote class="blockquote">
+                    <p>
+                        Pokémon, electronic game series from Nintendo that debuted in Japan in February 1996 as Pokémon Green and Pokémon Red. The franchise later became wildly popular in the United States and around the world. The series, originally produced for the company’s Game Boy line of handheld consoles, was introduced in 1998 to the United States with two titles, known to fans as Red and Blue. In the games, players assume the role of Pokémon trainers, obtaining cartoon monsters and developing them to battle other Pokémon. Pokémon became one of the most successful video game franchises in the world, second only to Nintendo’s Super Mario Bros.
+                        The original Pokémon is a role-playing game based around building a small team of monsters to battle other monsters in a quest to become the best. Pokémon are divided into types, such as water and fire, each with different strengths. Battles between them can be likened to the simple hand game rock-paper-scissors.
+                    </p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    <cite title="Source Title">britannica</cite>
+                </figcaption>
+            </figure>
+        </section>
+        <hr />
         <section>
-            <article>
-                <h2>My Pokemon</h2>
-            </article>
+
+            <select class="form-select" aria-label="Default select example">
+                <option selected>My Pokémon Team</option>
+                <option value="1">Charizard</option>
+                <option value="2">Pikachu</option>
+                <option value="3">Arceus</option>
+                <option value="3">Glaceon</option>
+                <option value="3">Garchomp</option>
+                <option value="3">Staravia</option>
+            </select>
 
             <article class="section-1 ">
-                <p> Currently my team consists of: </p>
                 <img src="charizard.png" class="rounded float-start" alt="Charizard">
                 <img src="pikachu.png" class="rounded float-end" alt="Pikachu">
                 <img src="arceus.png" class="rounded float-start" alt="Arceus">
@@ -40,21 +62,27 @@
                 <img src="staravia.png" class="rounded float-end" alt="Staravia">
 
                 <!--<p> My Dream future team will consist of: </p>
-                <ul>
-                    <li>Milotic</li>
-                    <li>Milotic</li>
-                    <li>Milotic</li>
-                    <li>Milotic</li>
-                    <li>Milotic</li>
-                    <li>Milotic</li>
-                </ul>-->
+        <ul>
+            <li>Milotic</li>
+            <li>Milotic</li>
+            <li>Milotic</li>
+            <li>Milotic</li>
+            <li>Milotic</li>
+            <li>Milotic</li>
+        </ul>-->
             </article>
+            <hr />
+            <h3>Toughest Ingame Trainers</h3>
 
-            <h3>Pokemon Website</h3>
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                    <h4>Pokémon Website</h4>
+                </blockquote>
+            </figure>
             <form action="https://www.pokemon.com/uk/pokedex/" method="get" target="_blank" id="myform">
                 <label for="mysearch"> Search for:</label>
                 <input id="mysearch" name="q" value="in works..." />
-                <input type="submit" value="Official Pokedex" />
+                <input type="submit" value="Official Pokémon" />
             </form>
         </section>
     </div>
